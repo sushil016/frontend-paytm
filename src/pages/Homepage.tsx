@@ -1,5 +1,6 @@
 
 
+import BottomWarning from "../components/BottomWarning";
 import Buttonui from "../components/Buttonui";
 
 const Homepage = () => {
@@ -12,12 +13,7 @@ const Homepage = () => {
         <button>
           <Buttonui label={"Signup"} />
         </button>
-        <div className="flex gap-2 justify-center ">
-          <span>Already have an Account</span>
-          <button>
-          <a href="">"Login"</a>
-          </button>
-        </div>
+        <BottomWarning label={"Already have an Account"} buttonText={"login"} to={'/login'}/>
       </div>
     </div>
   );
