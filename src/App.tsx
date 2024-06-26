@@ -5,6 +5,8 @@ import Homepage from './pages/Homepage'
 import Login from './pages/Login'
 import Signup from './pages/Signup'
 import Dashboard from './pages/Dashboard'
+import { BalanceTransfer } from './pages/BalanceTransfer'
+
 
 function App() {
   
@@ -19,6 +21,7 @@ function App() {
         <Route path="/login" element={<Login/>}></Route>
         <Route path="/signup" element={<Signup/>}></Route>
         <Route path="/dashboard" element={<Dashboard/>}></Route>
+        <Route path='/send' element={<BalanceTransfer/>}></Route>
       </Routes>
       </BrowserRouter>
         

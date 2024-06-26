@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom'
 
 const BottomWarning = ({to,buttonText,label}) => {
   return (
-    <div>
+    <div className='flex gap-2'>
        <div>{label}</div>
-       <Link className="pointer underline pl-1 cursor-pointer" to={to}>      
+       <Link className="pointer underline pl-1 cursor-pointer hover:text-blue-700 duration-150" to={to}>      
         {buttonText}
        </Link>
     </div>

@@ -1,16 +1,14 @@
-import { useState } from "react"
 
+const Balance = ({value}) => {
+    
 
-const Balance = () => {
-    const [balance , setBalance] = useState(false);
-
-   function clickHandler(){
-     setBalance(true)
-   }
+  //  function clickHandler(){
+  //    setBalance(Math.random() * 1000)
+  //  }
 
   return (
-    <div>
-        your baance = <button onClick={clickHandler}>show  {balance}</button>
+    <div className="flex justify-center font-semibold">
+        your balance =   {value}
     </div>
   )
 }
